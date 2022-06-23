@@ -1,0 +1,16 @@
+{% extends "main.html" %}
+{% block content %}
+
+    <h1>Mise à jour du capteur : {{capteur.nom}} </h1>
+    <form method="post" action="/update/capteurs/{{id}}/">
+        {% csrf_token %}
+        {{form.as_ul}}
+        <input type="submit" value="Modifier"/>
+    </form>
+	<style>
+		button{display:none}
+	</style>
+<script>
+	reloadevent = 1;
+</script>
+{% endblock content %}

@@ -1,0 +1,27 @@
+*{padding:0;margin:0}
+body{background:#EEE}
+h1,p{font-family:tahoma,arial;font-weight:1;color:#004996}
+.nav{color:#EEE;margin:20px;}
+.hold{height:100px}
+nav{width:100%;height:100px;background:#009fe3;position:fixed;top:0;display:flex;align-items:center;}
+a{margin:20px;font-size:20px;color:#EEE;font-family:tahoma;text-decoration:none;}
+.logo{position:absolute;right:0;top:0;width:360px;filter:drop-shadow(2px 2px 4px #222)}
+.content{width:calc(100% - 80px);padding:40px;padding-top:120px;min-height:50vh;display:flex;flex-direction:column;align-items:center;}
+.error{color:#804040;margin-top:50px;font-family:tahoma;font-weight:1}
+
+table{border-collapse: collapse;margin-top:50px;}
+table > tbody > tr > th, table > tbody > tr > td{padding:20px;border:1px solid #00b3ff;background:white;font-family:tahoma;width:200px;text-align:center;}
+table > tbody > tr > th{background:#009fe3;color:#EEE;font-size:18px;}
+
+table > tbody > tr > td > a{color:black;text-decoration:underline}
+
+.action{display:flex;width:200px;justify-content:center;}
+
+form{display:flex;flex-direction:column;font-family:tahoma;}
+form > li{list-style:none;display:flex;flex-direction:column;align-items:center;margin:25px;}
+
+button{cursor:pointer;color:#EEE;background:None;width:150px;padding:10px;font-family:tahoma;font-size:16px;margin-left:35px;border:none;border-radius:5px;box-shadow:5px 5px 8px #007ed0}
+button:active{box-shadow:2px 2px 6px #007ed0;background:#007ed0}
+
+.bg > img{width:500px;}
+.bg{display:flex;flex-wrap:wrap;justify-content:center;border-radius:15%;overflow:hidden;margin-top:25px;}

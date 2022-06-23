@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+ <html lang="fr">
+  <head>
+   <meta charset="UTF-8">
+   {% load static %}
+   <link rel="stylesheet" href="{% static 'main.css' %}">
+   <title> Groupe 10 | MQTT </title>
+     <script>
+var reloadevent = 0;
+function reload(){
+	if (reloadevent == 0){
+		location.reload()
+	}
+}
+setTimeout(reload,5000)
+</script>
+  </head>
+  <body>
+    <div class="hold"></div>
+    <nav> <h1 class="nav"> <a href='/'> SAE24 </a> </h1> <a href="/donnees"> Liste des donnees </a> <a href="/capteurs"> Liste des capteurs </a> <a href="/graphique"> Graphique </a>  <img class="logo" src="{% static 'uha.png' %}"><button id="button" onClick="if (reloadevent == 1){reloadevent = 0;setTimeout(reload,5000);document.getElementById('button').innerHTML='REFRESH: ON'}else if(reloadevent==0){reloadevent=1;document.getElementById('button').innerHTML='REFRESH: OFF'} " > REFRESH: ON</button></nav>
+    <div class="content">
+     {% block content %}
+     {% endblock content %}
+    </div>
+  </body>
+ </html>

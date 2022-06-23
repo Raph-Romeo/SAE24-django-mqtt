@@ -1,0 +1,26 @@
+{% extends "main.html" %}
+{% block content %}
+ <h1> HOME - SAE24 </h1>
+ <p> ROMEO - TEFANG - BATJARI </p>
+
+	<style>
+		button{display:none}
+	</style>
+	
+	
+	<div class='bg'>
+	{% load static %}
+	<img src="{% static 'home/1.jpg' %}">
+	<img src="{% static 'home/2.jpg' %}">
+	<img src="{% static 'home/3.jpg' %}">
+	<img src="{% static 'home/4.jpg' %}">
+	<img src="{% static 'home/5.jpg' %}">
+	<img src="{% static 'home/6.jpg' %}">
+	<img src="{% static 'home/7.jpg' %}">
+	<img src="{% static 'home/8.jpg' %}">
+	<img src="{% static 'home/9.jpg' %}">
+	</div>
+<script>
+	reloadevent = 1;
+</script>
+{% endblock content %}

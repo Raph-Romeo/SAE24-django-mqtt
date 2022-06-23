@@ -1,0 +1,27 @@
+{% extends "main.html" %}
+{% block content %}
+ <h1> Liste des donnees: </h1>
+  {% if count == 0 %}
+    <h2 class="error"> Aucune donnee n'a ete recue </h2>
+  {% else %}
+<table>
+  <tr>
+    <th> Température </th>
+    <th> Timestamp </th>
+    <th> Piece </th>
+    <th> Emplacement </th>
+    <th> Capteur </th>
+  </tr>
+  {% for i in data %}
+  <tr>
+    <td> {{i.data}} </td>
+    <td> {{i.timestamp}} </td>
+    <td> {{i.piece}} </td>
+    <td> {{i.emplacement}} </td>
+    <td> {{i.capteur_nom}} </td>
+  </tr>
+  {% endfor %}
+  {% endif %}
+</table>
+
+{% endblock content %}
